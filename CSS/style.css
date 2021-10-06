@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100;300;500&display=swap');
+
+:root{
+    --alt-blue-color: #1f2633;
+    --dark-blue-color: #293241;
+    --hard-blue-color: #98c1d9;
+    --light-blue-color: #e0fbfc;
+    --orange-color: #ee6c4d;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--dark-blue-color);
+}
+
+header{
+    background-color: var(--alt-blue-color);
+    height: 50px;
+    width: 100vw;
+    position:fixed;
+    box-shadow: 0px 2px rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    top: 0px;
+    
+}
+
+.headerContainerList{
+    padding-left: 30px;
+}
+
+.headerContainerList ul{
+    list-style-type: none;
+    
+}
+
+.headerContainerList ul li{
+    color: whitesmoke;
+    
+}
+
+.headerContainerList ul li h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.8rem;
+}
+
+main{
+    margin-top: 70px;
+    display: flex;
+    height: 630px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.sideContainer{
+    height: 100%;
+    width: 260px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: var(--orange-color);
+    order: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.sideContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.sideContainerList ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    list-style-type: none;
+}
+
+
+.sideContainer a{
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.sideContainer a:hover{
+    background-color: #e65d3b;
+}
+
+
+
+.sideContainer ul li{
+    margin: 0px 10px;
+    padding: 10px 5px;
+    border-bottom: 1px whitesmoke solid;
+    
+}
+
+.listTitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    color: whitesmoke;
+    
+
+}
+
+.listSubtitle{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: whitesmoke;
+    
+}
+
+.listTest{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: whitesmoke;
+}
+
+.mainContainer{
+    height: 100%;
+    width: 1000px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: var(--hard-blue-color);
+    order: 1;
+}
+
+.mainContainerTitle{
+    margin: 10px 30px;
+    border-bottom: 2px whitesmoke solid;
+}
+
+.mainContainerTitle h2{
+    font-family: 'Quicksand', sans-serif;
+    color: whitesmoke;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+
+.mainContainerContent{
+    padding: 10px 35px;
+}
+
+.mainContainerContent p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 1.30;
+    text-align: justify;
+}
+
+
+
