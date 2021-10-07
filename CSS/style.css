@@ -23,6 +23,7 @@ body{
     background-color: var(--dark-blue-color);
 }
 
+
 header{
     background-color: var(--alt-blue-color);
     height: 50px;
@@ -31,8 +32,11 @@ header{
     box-shadow: 0px 2px rgb(32, 32, 32);
     display: flex;
     align-items: center;
-    top: 0px;
-    
+    top: 0px;   
+}
+
+header a{
+    text-decoration: none;
 }
 
 .headerContainerList{
@@ -52,6 +56,7 @@ header{
 .headerContainerList ul li h1{
     font-family: 'Roboto', sans-serif;
     font-size: 2.8rem;
+    color: rgb(233, 233, 233);
 }
 
 main{
@@ -75,6 +80,8 @@ main{
     scrollbar-width: none;  /* Firefox */
 }
 
+
+
 .sideContainer::-webkit-scrollbar {
     display: none;
   }
@@ -90,12 +97,13 @@ main{
 
 .sideContainer a{
     text-decoration: none;
-    transition: 0.3s;
+    transition:  0.3s ease-in-out;
     
 }
 
 .sideContainer a:hover{
     background-color: #e65d3b;
+    transform: scale(1.1);
 }
 
 
@@ -138,6 +146,15 @@ main{
     border-radius: 10px;
     background-color: var(--hard-blue-color);
     order: 1;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
+.mainContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .mainContainerTitle{
@@ -157,12 +174,46 @@ main{
     padding: 10px 35px;
 }
 
+.mainContainerContentImages{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.mainContainerContentImages picture{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainerContentImages span{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-self: center;
+    font-size: 1.7rem;
+    margin-top: 5px;
+}
+
+.mainContainerContentImages img{
+    height: 120px;
+    width: 120px;
+    transition: ease-in-out 0.3s;
+}
+
+.mainContainerContentImages img:hover{
+    transform: scale(1.1);
+}
+
 .mainContainerContent p{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.9rem;
     font-weight: 500;
     line-height: 1.30;
     text-align: justify;
+    margin-bottom: 15px;
+}
+
+.mainContainerContent ul li{
+    list-style-type: none;
 }
 
 
