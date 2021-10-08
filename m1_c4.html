@@ -21,11 +21,28 @@
     <main>
         <div class="mainContainer">
             <div class="mainContainerTitle">
-                <h2>Bienvenido a tu Curso de Git & GitHub</h2>
+                <h2>Configuración de Git</h2>
             </div>
 
             <div class="mainContainerContent">
-            
+                <p>Ahora que ya has abierto el Git Bash, te encontrarás con una consola color negro, no te asustes, esta ventanita te será muy útil de aquí en adelante ya que aquí harás la gran mayoría de los movimientos de tus archivos como te explicamos en Los Tres Estados.</p>
+                <p>Lo primero que deberás hacer cuando instales Git es establecer un nombre de usuario y un correo electrónico, ya que estos serán visibles cuando estés trabajando en conjunto con un equipo y se tenga un control de las modificaciones que se hagan a los archivos de un proyecto.</p>
+                <p>Lo primero que deberás hacer cuando instales Git es establecer un nombre de usuario y un correo electrónico, ya que estos serán visibles cuando estés trabajando en conjunto con un equipo y se tenga un control de las modificaciones que se hagan a los archivos de un proyecto.</p>
+                <pre>
+                    $ git config --global user.name "Omar Pacheco"
+                    $ git config --global user.email omarpacheco@example.com
+                </pre>
+                <p>Si quieres comprobar tu configuración utiliza este comando para mostrar todas las propiedades que Git ha configurado:</p>
+                <pre>
+                    $ git config --list
+                </pre>
+                <h3>¿Cómo obtener ayuda?</h3>
+                <p>Si necesitas ayuda usando Git, existen tres formas de ver la página del manual para saber más acerca de cualquier comando en Git.</p>
+                <pre>
+                    $ git help < verb>
+                    $ git < verb> --help
+                    $ man git-< verb>
+                </pre>
             </div>
         </div>
 
@@ -34,7 +51,7 @@
                 <ul>
                     <li class="listTitle">Módulo 1</li>
                     <a href="./m1_c1.html">
-                        <li class="listSubtitle">1. ¿Qué es Git?
+                        <li class="listSubtitle">1. ¿Qué es un Sistema de Control de Versiones?
                     </li></a>
                     <a href="./m1_c2.html">
                         <li class="listSubtitle">2. ¿Por qué usar Git?</li>

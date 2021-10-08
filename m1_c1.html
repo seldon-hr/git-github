@@ -21,11 +21,34 @@
     <main>
         <div class="mainContainer">
             <div class="mainContainerTitle">
-                <h2>¿Qué es Git?</h2>
+                <h2>¿Qué es un Sistema de Control de Versiones?</h2>
             </div>
 
             <div class="mainContainerContent">
-                <p>Holis</p>
+                <p>Es una herramienta que nos ayuda a registrar los cambios realizados en un archivo o un conjunto de archivos a lo largo del tiempo, de esta manera puedes recuperar versiones de tus archivos si es que llegaras a necesitarlas más adelante.</p>
+                <p>Usar un sistema de control de versiones (VCS por sus siglas en inglés) es de gran utilidad en ambientes de desarrollo, ya que te permite no solo regresar a versiones anteriores de tus archivos, sino también de proyectos completos, comparar cambios a lo largo del tiempo o ver quién modificó algo que esté causando problemas en el proyecto.</p>
+                <p>Adicionalmente, si arruinas o pierdes los archivos de tu proyecto, será posible recuperarlos fácilmente.</p>
+                <h3>Sistema de control de Versiones Locales</h3>
+                <p>Es el método de control que usamos convencionalmente al copiar y pegar archivos a otros directorios, cambiándoles el nombre o poniendo la fecha y hora que se realizó dicha versión del archivo. Este método es propenso muchos errores, como olvidar donde dejaste el archivo, guardar accidentalmente un archivo o sobrescribir archivos que no querías.</p>
+                <p>Para ello, anteriormente los programadores desarrollaron un VCS de manera local que contenían una base de datos, la cual llevaba un registro de todos los cambios realizados.</p>
+                <picture class="graph">
+                    <img src="./IMG/G1.png" alt="">
+                </picture>
+                <h3>Sistemas de Control de Versiones Centralizados</h3>
+                <p>De manera local el anterior sistema podría funcionar si fueras la única persona trabajando en el proyecto, pero surge el gran problema de querer colaborar con otros desarrolladores en otros sistemas. </p>
+                <p>De manera local el anterior sistema podría funcionar si fueras la única persona trabajando en el proyecto, pero surge el gran problema de querer colaborar con otros desarrolladores en otros sistemas. </p>
+                <picture class="graph">
+                    <img src="./IMG/G2.png" alt="">
+                </picture>
+                <p>Con este sistema es mucho más fácil saber sobre qué es lo que puede hacer cada usuario y sobre todo no tener que lidiar con una base de datos local por cada miembro del equipo.</p>
+                <p>Este sistema también cuenta con una falla importante, si este servidor centralizado se cae durante una hora, ninguno de los colaboradores no podrá seguir trabajando ni guardar cambios en los archivos en los cuales hayan estado trabajando, si el disco duro se corrompe y no se realizó ninguna copia de seguridad adecuada, se perderá todo lo relacionado con el proyecto, a excepción de los archivos locales de cada miembro.</p>
+                <h3>Sistemas de Control de Versiones Distribuidos</h3>
+                <p>Estos sistemas resuelven el problema anteriormente mencionado, los Sistemas de Control de Versiones Distribuidos (DVCS por sus siglas en inglés) son capaces de que los clientes descarguen la última copia de los archivos y al mismo tiempo replicando completamente el repositorio. Y en caso de que el servidor deje de funcionar, cualquiera de los repositorios disponibles en los clientes puede ser copiados al servidor para poder restaurarlo. Cada copia almacenada en las computadoras de los clientes son realmente una copia completa de todos los datos.</p>
+                <picture class="graph">
+                    <img src="./IMG/G3.png" alt="">
+                </picture>
+                <p>Estos sistemas también pueden manejar más de un repositorio de manera remota, así que puedes trabajar en simultaneo con diferentes grupos de personas dentro del mismo proyecto. Y establecer flujos de trabajo que serían imposibles con sistemas locales o centralizados.</p>
+                <p>Aquí es donde se encuentra Git, el Sistema de Control de versiones del cual aprenderás de su historia, como funciona, por qué deberías usarlo y como usarlo.</p>
             </div>
         </div>
 
@@ -34,7 +57,7 @@
                 <ul>
                     <li class="listTitle">Módulo 1</li>
                     <a href="./m1_c1.html">
-                        <li class="listSubtitle">1. ¿Qué es Git?
+                        <li class="listSubtitle">1. ¿Qué es un Sistema de Control de Versiones?
                     </li></a>
                     <a href="./m1_c2.html">
                         <li class="listSubtitle">2. ¿Por qué usar Git?</li>

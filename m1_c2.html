@@ -21,20 +21,55 @@
     <main>
         <div class="mainContainer">
             <div class="mainContainerTitle">
-                <h2>Bienvenido a tu Curso de Git & GitHub</h2>
+                <h2>¿Por qué usar Git?</h2>
             </div>
 
             <div class="mainContainerContent">
-            
+                <p>Cuando Linus Torvalds desarrollaba el kernel de Linux, uno de los sistemas operativos más importantes de la actualidad; trabajó con un DVCS durante la etapa de mantenimiento, este se llamaba BitKeeper, pero en 2005 fue cuando la compañía que lo desarrollaba se vino abajo y la herramienta dejo dejó de ser gratuita.</p>
+                <p>Esto impulso a Linus Torvalds a desarrollar su propia herramienta basado en lo que aprendió usando BitKeeper. Para Linus los objetivos de su Sistema de Control de Versiones definitivo fueron los siguientes:</p>
+                <ul>
+                    <li><p>⚡ Velocidad</p> </li>
+                    <li><p>🚩 Diseño simple y minimalista</p> </li>
+                    <li><p>⏩ Soportar un desarrollo no lineal (miles de ramas paralelas)</p> </li>
+                    <li><p>🌎 Completamente distribuido</p> </li>
+                    <li><p>💪 Capáz de manejar proyectos grandes de manera eficiente</p></li>
+                </ul>
+                <p>Y así fue como nació Git en 2005, a lo largo de todos estos años ha ido evolucionando para seguir siendo fácil de usar y, sobre todo, ser increíblemente rápido, eficiente con proyectos grandes y seguir teniendo un eficaz sistema de ramificación para los desarrollos no lineales.</p>
+                <h3>Fundamentos de Git</h3>
+                <p>Lo que hace diferente a Git es la manera en la cual maneja sus datos, en comparación con otros sistemas que almacenan la información como una lista de cambios en los archivos a través del tiempo.</p>
+                <picture class="graph">
+                    <img src="./IMG/G4.png" alt="">
+                </picture>
+                <p>Mientras que Git no maneja ni almacena los datos de esta manera, Git hace copias instantáneas. Cada que confirmas un cambio o guardas el estado de tu proyecto en Git, le hace una copia de todos tus archivos en ese momento y guarda una referencia. Esto lo hace más eficiente ya que si el usuario no realiza ningún cambio, Git no almacena el archivo de nuevo, sino que genera un enlace idéntico al anterior ya almacenado. Git maneja sus datos como una secuencia de copias instantáneas.</p>
+                <picture class="graph">
+                    <img src="./IMG/G5.png" alt="">
+                </picture>
+                <h3>La mayoría de operaciones en Git son locales</h3>
+                <p>Por lo general para empezar a utilizar Git no necesitas información de otro computador o de estar conectado a la red, debido a que desde que inicias con un proyecto con Git, toda la historia de este se guarda en tu disco local, haciendo que las operaciones sean instantáneas.</p>
+                <p>Git no necesita conectarse al servidor para obtener la versión de ese archivo de hace un mes, ya que realiza un cálculo de las diferencias que se hicieron localmente. Esto significa que si te encuentras desconectado o sin un VPN puedes seguir trabajando y seguir guardando tus cambios de manera local hasta que consigas una conexión de red y puedas subirlos.</p>
+                <h3>La Integridad de Git</h3>
+                <p>Todo en Git se verifica mediante una suma de comprobación (un checksum en inglés). Esto significa que es imposible cambiar los contenidos  de los archivos sin que Git lo sepa, esto es parte de la filosofía de Git, para que no pierdas información o sufrir algún tipo de corrupción de archivos.</p>
+                <p>Cada que haces un cambio en Git, casi todo se almacena en la base de datos de Git, así que es complicado que haya algo que no se pueda enmendar o que se borre la información. </p>
+                <h3>Los Tres Estados</h3>
+                <p>Git maneja tres estados principales en los que se pueden encontrar tus archivos: confirmado (commited), modificado (modified), y preparado (staged). </p>
+                <p><b>Confirmado:</b> Los datos están almacenados de manera segura en tu base de datos local.</p>
+                <p><b>Modificado:</b> Has modificado el archivo, pero todavía no has confirmado los cambios para que se almacenen en tu base de datos local.</p> 
+                <p><b>Preparado:</b>  Tienes un archivo modificado que ya tienes listo para que se ingrese a tu base de datos local en tu próxima confirmación.</p>   
+                <p>Esto nos deja con tres secciones principales de un proyecto en Git. El directorio de Git, el directorio de trabajo y el área de preparación.</p>
+                <picture class="graph">
+                    <img src="./IMG/G6.png" alt="">
+                </picture>
+                <p><b>El directorio de Git</b> es donde se almacenan los metadatos y la base de datos de objetos para tu proyecto. Ya que esto es lo que se copia cuando clonas un repositorio desde otra  computadora.</p>
+                <p><b>El directorio de trabajo</b> es una copia de la versión actual de tu proyecto, estos se sacan de la base de datos en el directorio de Git y se colocan en disco duro para que los puedas usar.</p>
+                <p><b>El área de preparación</b> es un archivo que almacena información acerca de los cambios que van a ir en tu siguiente confirmación.</p>
             </div>
         </div>
-
         <div class="sideContainer">
             <div class="sideContainerList">
                 <ul>
                     <li class="listTitle">Módulo 1</li>
                     <a href="./m1_c1.html">
-                        <li class="listSubtitle">1. ¿Qué es Git?
+                        <li class="listSubtitle">1. ¿Qué es un Sistema de Control de Versiones?
                     </li></a>
                     <a href="./m1_c2.html">
                         <li class="listSubtitle">2. ¿Por qué usar Git?</li>
