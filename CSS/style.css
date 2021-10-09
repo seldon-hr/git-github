@@ -229,6 +229,15 @@ main{
     padding: 10px 0px;
 }
 
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+iframe{
+    margin: 0 auto;
+}
 
 
 .graph{
@@ -237,6 +246,20 @@ main{
     height: 45vh;
     margin-bottom: 20px;
 }
+
+.graph img{
+    transition: ease-in-out 0.3s;
+}
+
+.graph :hover{
+    transform: scale(1.05);
+}
+
+.WIP{
+    margin-bottom: 0px;
+}
+
+
 
 pre{
     background: #F7F6F3;
@@ -295,5 +318,9 @@ pre{
     list-style-type: none;
 }
 
+.maintenance p{
+    font-size: 3rem;
+    text-align: center;
+}
 
 
