@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="preload.js"></script>
+    <script src="./hide.js"></script>
 </head>
 <body class="hidden">
     <div class="center" id="onload">
@@ -53,6 +54,22 @@
                     $ git < verb> --help
                     $ man git-< verb>
                 </pre>
+                <h3>Ejercicio</h3>
+                <p>En su consola GitBash, configure su nombre de usuario y el correo electrónico, también muestre las propiedades que ha configurado en Git.</p>
+                <button id="showContainer" type="button">Solución</button>
+                <div id="containerHidden">
+                    <pre>
+                    > git config --global user.name "Your-Full-Name"
+                    > git config --global user.email "your-email-address"
+                    > git config --list  
+                    </pre>
+                </div>
+                <button id="showContainerImg" type="button">Resolución</button>
+                <div id="containerHiddenImg">
+                    <picture>
+                        <img src="./IMG/G7.gif" alt="">
+                    </picture>
+                </div>
             </div>
         </div>
 

@@ -274,6 +274,37 @@ pre{
     margin-bottom: 15px;
 }
 
+#showContainer, #showContainerImg{
+    width: 100px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--orange-color);
+    color: whitesmoke;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+    margin: 5px 10px 15px 0px;
+    
+}
+
+
+#showContainer:hover, #showContainerImg:hover{
+    cursor: pointer;
+    background-color: #e65d3b;
+    
+}
+
+#containerHidden, #containerHiddenImg{
+    display: none;
+}
+
+#containerHiddenImg img{
+    display: flex;
+    margin: 10px auto;
+    height: 280px;
+}
+
 .mainContainerContentImages{
     display: flex;
     justify-content: space-evenly;
