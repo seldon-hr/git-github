@@ -195,13 +195,39 @@ main{
     overflow-y: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
 }
 
 
 
 .mainContainer::-webkit-scrollbar {
-    display: none;
+    -webkit-appearance: none;
 }
+
+.mainContainer::-webkit-scrollbar:vertical {
+    width:15px;
+}
+
+.mainContainer::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.mainContainer::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.mainContainer::-webkit-scrollbar-thumb {
+    background-color: var(--light-blue-color);
+    border-radius: 10px;
+    border: 2px solid var(--light-blue-color);
+}
+
+.mainContainer::-webkit-scrollbar-track {
+    border-radius: 5px;  
+}
+
+
 
 .mainContainerTitle{
     margin: 10px 30px;
