@@ -378,6 +378,15 @@ pre{
 }
 
 .mainContainerContent ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.30;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.mainContainerContent ul li{
     list-style-type: none;
 }
 

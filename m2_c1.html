@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="preload.js"></script>
+    <script src="./hide.js"></script>
 </head>
 <body class="hidden">
     <div class="center" id="onload">
@@ -31,13 +32,39 @@
     <main>
         <div class="mainContainer">
             <div class="mainContainerTitle">
-                <h2>Bienvenido a tu Curso de Git & GitHub</h2>
+                <h2>Comandos Básicos y Primer Repositorio</h2>
             </div>
 
-            <div class="mainContainerContent test">
-                <p>Excelente, has concluido con las bases fundamentales sobre lo que significa un Sistema de Control de Versiones, un poco de la historia de Git y cómo es que funciona de manera interna, como descargarlo de internet, instalarlo y también hacer tus primeras configuraciones para que funcione con tu identidad personal, antes de continuar te pedimos que realices este cuestionario para que reafirmes lo que has aprendido, o si necesitas un repaso.</p>
-                <p>Recuerda que puedes regresar a cualquier sección del menú lateral si es que lo necesitas, te deseamos éxito en tu prueba.</p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchrkDIuv5tmBLgo0ERfXvq90btfs4QSp-RaM0BLg9llGDCDQ/viewform?embedded=true" width="640" height="3328" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            <div class="mainContainerContent">
+                <p>Cuando abras la terminal de Git Bash te encontrarás con una ventana con un texto verde, no te asustes, ni tampoco te emociones creyéndote hacker, de igual manera, este es el primer paso para poder convertirte en uno. Los siguientes comandos te ayudarán a poder manejarte entre todos los archivos y carpetas en tu equipo, y también poder modificarlos.</p>
+                <div class="mainContainerVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/skGaHz-IOiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li>• <b>pwd</b>: Nos muestra la ruta de carpetas en la que te encuentras ahora mismo.</li>
+                    <li>• <b>ls</b>: Nos permite cambiar ver los archivos de la carpeta donde estamos ahora mismo.</li>
+                    <li>• <b>mkdir</b>: Nos permite crear carpetas (por ejemplo, mkdir Carpeta-Importante).</li>
+                    <li>• <b>touch</b>: Nos permite crear archivos (por ejemplo, touch archivo.txt).</li>
+                    <li>• <b>rm</b>: Nos permite borrar un archivo o carpeta (por ejemplo, rm archivo.txt). Mucho cuidado con este comando, puedes borrar todo tu disco duro.</li>
+                    <li>• <b>cat</b>: Ver el contenido de un archivo (por ejemplo, cat nombre-archivo.txt).</li>
+                    <li>• <b>cd</b>: Nos permite navegar entre carpetas.</li>
+                    <li>• <b>cd carpeta/subcarpeta</b>: Navegar a una ruta dentro de la carpeta donde estamos ahora mismo.</li>
+                    <li>• <b>cd ..</b> (cd + dos puntos): Regresar una carpeta hacia atrás.</li>
+                    <li>• <b>clear</b>: Para limpiar la terminal. También podemos usar los atajos de teclado Ctrl + L.</li>
+                </ul>
+                <h3>Ejercicio</h3>
+                <p>Tu siguiente prueba será utilizando únicamente Git Bash, en tu carpeta personal deberás crear una carpeta con el nombre mi-primer-repo, entrar dentro de esta e inicializar tu primer repositorio de git, cuando lo hayas inicializado dentro de la carpeta deberás crear un archivo llamado archivo1.txt, el cual deberá incluir el siguiente texto: Hola soy un archivo de texto y me encuentro dentro del primer repositorio de mi creador. </p>
+                <button id="showContainer" type="button">Solución</button>
+                <div id="containerHidden">
+                    <pre>
+                            $ mkdir mi-primer-repo
+                            $ cd mi-primer-repo/
+                            $ git init
+                            $ touch archivo1.txt
+                            $ code archivo1.txt
+                            $ cat archivo1.txt
+                    </pre>
+                </div>
             </div>
         </div>
 
